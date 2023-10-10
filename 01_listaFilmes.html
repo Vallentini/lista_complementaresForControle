@@ -9,12 +9,23 @@
     */
 
     //ENTRADA
-
-    
+    const Nfilmes = Number(prompt("Informe quantos filmes deseja cadastrar"));
+    let filmes1 = [];
+    let generos = [];
     //PROCESSAMENTO
-    
-    
+    for (let contador = 1; contador <= Nfilmes; contador++) {
+        const element = Nfilmes[contador];
+        const filmes = prompt(`Informe o nome do filme:`);
+        const genero = prompt(`Informe o gênero do filme ${filmes}:`);
+        filmes1.push(filmes);
+        generos.push(genero);
+    }
     //SAÍDA
-    
-    
+    document.write("Filmes")
+    document.write("</ul>");
+    document.write(`<li> ${filmes1} </li>`);
+    document.write("Gêneros")
+    document.write("</ul>");
+    document.write("</ul>");
+    document.write(`<li> ${generos} </li>`)
 </script>

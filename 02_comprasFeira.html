@@ -15,11 +15,18 @@
     */
 
     //ENTRADA
-
-    
+    let itens = ["Tomate", "Batata", "Batata-Doce", "Alface", "Cebola", "Cebolinha", "Beterraba"];
+    let preco = [3.90, 3.40, 4.70, 1.50, 2.90, 1.40, 4.10];
     //PROCESSAMENTO
-    
-    
+    for (let contador = 0; contador < itens.length; contador++) {
+        const item = itens[contador];
+        const quantidade = Number(prompt(`Informe a quantidade de ${item} (em kg) que foram vendidos:`).trim().replace(",", "."));
+        for (let index = 0; index < preco.length; index++) {
+            const element = preco[index];
+            const conta = quantidade * element;
+        }
+    }
     //SAÍDA
-    
+    document.write(`${item}, valor lucrado: ${conta}`)
+
 </script>
